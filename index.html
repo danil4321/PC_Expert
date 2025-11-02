@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://formspree.io; style-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <title>Моделі для Штучного Інтелекту - PC Expert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка з логотипом і меню -->
+    <header>
+        <div class="logo">PC Expert - Моделі ШІ</div>
+        <nav>
+            <ul>
+                <li><a href="#">Моделі</a></li>
+                <li><a href="#">Зв'язатись з нами</a></li>
+                <li><a href="#">Документація</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Опис компанії -->
+    <section class="company-intro">
+        <div class="intro-content">
+            <h1>Оренда фізичного GPU-серверу з підтримкою Ollama</h1>
+            <p>Надаємо виділені сервери для запуску нейромереж клієнтів: чат-боти, генерація текстів, аналітика документів, дослідження. Повний контроль, конфіденційність даних та підтримка моделей Llama, Gemma, Mistral, Phi.</p>
+            <div class="intro-buttons">
+                <a href="#order-form" class="btn primary">Орендувати сервер</a>
+                <a href="#model-list" class="btn secondary">Переглянути моделі</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Список моделей -->
+    <div class="model-list" id="model-list">
+        <!-- Llama 3 8B -->
+        <div class="model-card">
+            <div class="model-name">Llama 3 8B — інтелектуальний асистент нового покоління</div>
+            <div class="model-desc">
+                Розробник: Meta AI<br>
+                Призначення: чат-боти, віртуальні помічники, консультаційні системи.<br>
+                Llama 3 8B — це одна з найпотужніших відкритих мовних моделей, створена для інтерактивного спілкування з користувачами. Вона відзначається високою точністю відповідей, підтримкою української та англійської мов, глибоким розумінням контексту. Завдяки оптимізації під сучасні GPU (зокрема NVIDIA L4), модель забезпечує швидку обробку запитів навіть у багатокористувацькому режимі.
+            </div>
+            <div class="tags">
+                <span class="tag">чат</span>
+                <span class="tag">асистент</span>
+                <span class="tag">українська мова</span>
+                <span class="tag">GPU</span>
+            </div>
+            <div class="stats">
+                <span>10M Завантажень</span>
+                <span>4 Теґи</span>
+                <span>Оновлено 3 тижні тому</span>
+            </div>
+            <div class="hash">
+                <small><strong>SHA-256:</strong> <code>7a3f...9b2e</code></small>
+            </div>
+        </div>
+
+        <!-- Mistral 7B -->
+        <div class="model-card">
+            <div class="model-name">Mistral 7B — модель для аналітики та документообігу</div>
+            <div class="model-desc">
+                Розробник: Mistral AI<br>
+                Призначення: аналітика текстів, обробка документів, створення звітів.<br>
+                Mistral 7B — це модель із відмінним логічним мисленням і глибоким розумінням великих текстових обсягів. Вона підходить для аналізу юридичних, технічних або бізнес-документів, може виконувати класифікацію, узагальнення або генерацію коротких висновків. Ідеальний вибір для компаній, які хочуть автоматизувати роботу з текстовими даними.
+            </div>
+            <div class="tags">
+                <span class="tag">аналітика</span>
+                <span class="tag">документи</span>
+                <span class="tag">логіка</span>
+                <span class="tag">API</span>
+            </div>
+            <div class="stats">
+                <span>8M Завантажень</span>
+                <span>4 Теґи</span>
+                <span>Оновлено вчора</span>
+            </div>
+            <div class="hash">
+                <small><strong>SHA-256:</strong> <code>e1c9...4f7d</code></small>
+            </div>
+        </div>
+
+        <!-- Gemma 2 9B -->
+        <div class="model-card">
+            <div class="model-name">Gemma 2 9B — творча модель для текстогенерації</div>
+            <div class="model-desc">
+                Розробник: Google DeepMind<br>
+                Призначення: генерація рекламних, технічних, маркетингових текстів, описів товарів, блогів.<br>
+                Gemma 2 9B — це модель, що поєднує аналітичну точність і креативність. Вона створює тексти, які виглядають природно й стилістично гармонійно. Ідеально підходить для бізнесів, які працюють у сфері контент-маркетингу, реклами, SMM або копірайтингу.
+            </div>
+            <div class="tags">
+                <span class="tag">генерація тексту</span>
+                <span class="tag">креативність</span>
+                <span class="tag">маркетинг</span>
+                <span class="tag">стиль</span>
+            </div>
+            <div class="stats">
+                <span>12M Завантажень</span>
+                <span>4 Теґи</span>
+                <span>Оновлено 1 місяць тому</span>
+            </div>
+            <div class="hash">
+                <small><strong>SHA-256:</strong> <code>5d2a...8c1f</code></small>
+            </div>
+        </div>
+
+        <!-- Phi 3 Mini -->
+        <div class="model-card">
+            <div class="model-name">Phi 3 Mini — легка модель для навчальних і дослідницьких проєктів</div>
+            <div class="model-desc">
+                Розробник: Microsoft Research<br>
+                Призначення: освітні цілі, тестування, дослідження в галузі ШІ.<br>
+                Phi 3 Mini — компактна й надзвичайно ефективна модель, створена для експериментів, навчання студентів і початкових дослідницьких проєктів. Вона швидко завантажується, не потребує великих обчислювальних ресурсів, але при цьому демонструє високу якість у базових NLP-завданнях.
+            </div>
+            <div class="tags">
+                <span class="tag">освіта</span>
+                <span class="tag">легка</span>
+                <span class="tag">дослідження</span>
+                <span class="tag">NLP</span>
+            </div>
+            <div class="stats">
+                <span>5M Завантажень</span>
+                <span>4 Теґи</span>
+                <span>Оновлено 2 тижні тому</span>
+            </div>
+            <div class="hash">
+                <small><strong>SHA-256:</strong> <code>2b9f...d4e6</code></small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Форма замовлення -->
+    <section class="order-form" id="order-form">
+        <div class="form-container">
+            <h2>Форма замовлення</h2>
+            <form action="https://formspree.io/f/mdkpbkpb" method="POST">
+                <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email" id="email" name="email" placeholder="Введіть вашу пошту" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефону</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введіть ваш номер телефону">
+                </div>
+                <div class="form-group">
+                    <label for="model">Бажана модель</label>
+                    <select id="model" name="model">
+                        <option value="llama">Llama 3 8B</option>
+                        <option value="mistral">Mistral 7B</option>
+                        <option value="gemma">Gemma 2 9B</option>
+                        <option value="phi">Phi 3 Mini</option>
+                        <option value="other">Інша</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Коментарі та побажання</label>
+                    <textarea id="comments" name="comments" placeholder="Вкажіть ваші побажання" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn primary">Відправити замовлення</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section class="contact-info">
+        <div class="contact-container">
+            <h2>Зв'яжіться з нами</h2>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <span class="contact-icon telegram"></span>
+                    <p><strong>Telegram:</strong> <a href="https://t.me/PCExpertAI">@PCExpertAI</a></p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon email"></span>
+                    <p><strong>Електронна пошта:</strong> <a href="mailto:support@pcexpert.ai">support@pcexpert.ai</a></p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon phone"></span>
+                    <p><strong>Номер телефону:</strong> <a href="tel:+380123456789">+380 123 456 789</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2025 PC Expert. Усі права захищено.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
